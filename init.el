@@ -32,7 +32,7 @@ This function should only modify configuration layer settings."
 
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(
+   '(python
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
@@ -583,7 +583,7 @@ This function is called at the very end of Spacemacs initialization."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(helm-company yasnippet-snippets yasnippet evil-org git-link git-messenger git-modes git-timemachine gitignore-templates gnuplot helm-git-grep helm-ls-git helm-org-rifle htmlize org-cliplink org-contrib org-download org-mime org-pomodoro alert log4e gntp org-present org-rich-yank org-superstar orgit-forge orgit forge yaml markdown-mode ghub closql emacsql-sqlite emacsql treepy smeargle space-doc toc-org treemacs-magit magit magit-section git-commit with-editor transient ace-jump-helm-line auto-compile packed compat elisp-def elisp-slime-nav emr iedit clang-format paredit list-utils evil-mc flycheck-elsa flycheck-package package-lint flycheck helm-ag helm-descbinds helm-flx flx helm-make helm-mode-manager helm-org helm-projectile helm-swoop helm-themes helm-xref helm popup helm-core help-fns+ inspector macrostep nameless overseer f pkg-info epl quickrun treemacs-evil treemacs-icons-dired treemacs-projectile treemacs which-key use-package projectile pfuture pcre2el hydra hybrid-mode ht holy-mode evil-evilified-state dotenv-mode diminish cfrs bind-map async ace-window)))
+   '(blacken code-cells company-anaconda anaconda-mode counsel-gtags counsel swiper ivy cython-mode dap-mode lsp-docker lsp-treemacs bui evil-matchit ggtags helm-cscope helm-gtags helm-pydoc importmagic epc ctable concurrent deferred live-py-mode lsp-pyright lsp-python-ms lsp-mode spinner nose pip-requirements pipenv load-env-vars pippel poetry py-isort pydoc pyenv-mode pythonic pylookup pytest pyvenv smartparens sphinx-doc stickyfunc-enhance window-purpose imenu-list xcscope yapfify helm-company yasnippet-snippets yasnippet evil-org git-link git-messenger git-modes git-timemachine gitignore-templates gnuplot helm-git-grep helm-ls-git helm-org-rifle htmlize org-cliplink org-contrib org-download org-mime org-pomodoro alert log4e gntp org-present org-rich-yank org-superstar orgit-forge orgit forge yaml markdown-mode ghub closql emacsql-sqlite emacsql treepy smeargle space-doc toc-org treemacs-magit magit magit-section git-commit with-editor transient ace-jump-helm-line auto-compile packed compat elisp-def elisp-slime-nav emr iedit clang-format paredit list-utils evil-mc flycheck-elsa flycheck-package package-lint flycheck helm-ag helm-descbinds helm-flx flx helm-make helm-mode-manager helm-org helm-projectile helm-swoop helm-themes helm-xref helm popup helm-core help-fns+ inspector macrostep nameless overseer f pkg-info epl quickrun treemacs-evil treemacs-icons-dired treemacs-projectile treemacs which-key use-package projectile pfuture pcre2el hydra hybrid-mode ht holy-mode evil-evilified-state dotenv-mode diminish cfrs bind-map async ace-window)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
