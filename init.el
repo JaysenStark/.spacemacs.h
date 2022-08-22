@@ -554,6 +554,8 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
       '(("melpa-cn" . "http://1.15.88.122/melpa/")
         ("org-cn"   . "http://1.15.88.122/org/")
         ("gnu-cn"   . "http://1.15.88.122/gnu/")))
+  (setq yas-snippet-dirs
+        '("~/.emacs.hmacs/private/snippets"))
 )
 
 
