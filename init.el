@@ -38,6 +38,10 @@ This function should only modify configuration layer settings."
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
      ;; `M-m f e R' (Emacs style) to install them.
      ;; ----------------------------------------------------------------
+     ;; 快捷代码插件
+     yasnippet
+     ;; 常用代码块
+     yasnippet-snippets
      auto-completion
      ;; better-defaults
      emacs-lisp
