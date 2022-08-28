@@ -552,6 +552,10 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
         ("gnu-cn"   . "http://1.15.88.122/gnu/")))
   (setq yas-snippet-dirs
         '("~/.emacs.hmacs/private/snippets"))
+  (setq byte-compile-warnings '(cl-functions))
+  (when (string= system-type "darwin")
+    (setq dired-use-ls-dired nil))
+  (setq dired-quick-sort-suppress-setup-warning t)
 )
 
 
