@@ -41,6 +41,8 @@ This function should only modify configuration layer settings."
      ;; ----------------------------------------------------------------
      auto-completion
      ;; better-defaults
+     (spacemacs-evil :variables
+                     spacemacs-evil-collection-allowed-list  ' (ediff))
      emacs-lisp
      git
      helm
@@ -65,7 +67,12 @@ This function should only modify configuration layer settings."
    ;; `dotspacemacs/user-config'. To use a local version of a package, use the
    ;; `:location' property: '(your-package :location "~/path/to/your-package/")
    ;; Also include the dependencies as they will not be resolved automatically.
-   dotspacemacs-additional-packages '()
+   dotspacemacs-additional-packages
+   '(
+     (string-inflection :location
+                        (recipe :fetcher github
+                                :repo "akicho8/string-inflection"
+                                :commit "a104cc1043eac0db7cf1fbff1b61b45e1953aecd")))
 
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
