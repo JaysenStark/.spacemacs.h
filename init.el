@@ -561,9 +561,11 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
   (setq yas-snippet-dirs
         '("~/.emacs.hmacs/private/snippets"))
   (setq byte-compile-warnings '(cl-functions))
-  (when (string= system-type "darwin")
-    (setq dired-use-ls-dired nil))
-  (setq dired-quick-sort-suppress-setup-warning t)
+  ;; (when (eq system-type 'darwin)
+  ;;   (require 'ls-lisp)
+  ;;   (setq ls-lisp-use-insert-directory-program nil))
+  (when (equal system-type 'darwin)
+    (setq insert-directory-program "/usr/local/bin/gls"))
 )
 
 
@@ -581,6 +583,32 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
+  (evil-define-key 'normal archive-mode-map "g" 'archive-chgrp-entry)
+  (evil-define-key 'normal tar-mode-map "g" 'tar-chgrp-entry)
+  (eval-after-load 'dired
+    '(evil-add-hjkl-bindings dired-mode-map 'normal
+       "RET" 'dired-find-file
+       "e" 'dired-goto-file
+       "g" 'revert-buffer
+       "G" 'dired-do-chgrp
+       "l" 'dired-do-redisplay
+       "L" 'dired-do-load
+       "f" 'dired-find-file
+       "F" 'dired-do-find-marked-files
+       "o" 'dired-find-file-other-window
+       "^" 'dired-up-directory
+       "+" 'dired-create-directory
+       "R" 'dired-do-rename
+       "T" 'dired-do-touch
+       "C" 'dired-do-copy
+       "M" 'dired-do-chmod
+       "d" 'dired-flag-file-deletion
+       "m" 'dired-mark
+       "u" 'dired-unmark
+       "x" 'dired-do-flagged-delete
+       "?" 'dired-summary
+       ;; "RET" 'dired-find-file
+     ))
 )
 
 
