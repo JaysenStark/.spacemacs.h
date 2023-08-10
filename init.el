@@ -562,6 +562,8 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
       '(("melpa-cn" . "http://1.15.88.122/melpa/")
         ("org-cn"   . "http://1.15.88.122/org/")
         ("gnu-cn"   . "http://1.15.88.122/gnu/")))
+  (setq python-indent-guess-indent-offset t)
+  (setq python-indent-guess-indent-offset-verbose nil)
   (setq yas-snippet-dirs
         '("~/.emacs.hmacs/private/snippets"))
   (setq byte-compile-warnings '(cl-functions))
