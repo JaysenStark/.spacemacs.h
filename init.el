@@ -32,7 +32,7 @@ This function should only modify configuration layer settings."
 
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(python
+   '(
      yaml
      sqlite3
      ;; ----------------------------------------------------------------
@@ -58,6 +58,7 @@ This function should only modify configuration layer settings."
      ;; spell-checking
      ;; syntax-checking
      ;; version-control
+     (python :variables python-backend 'anaconda)
      treemacs
      xclipboard
      )
